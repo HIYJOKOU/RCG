@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +8,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- LIGHT THEME.BACKGROUND -->
+    <color name='background_LIGHT'>#FFFFFF</color> #96-A
+    <!-- LIGHT THEME.TEXT -->
+    <color name='text_primary_LIGHT'>#000000</color> #85-A
+    <color name='text_secondary_LIGHT'>#000000</color> #83-A
+    <color name='text_button_LIGHT'>#000000</color> #83-A
+
+    <!-- DARK THEME.BACKGROUND -->
+    <color name='background_DARK'>#403D3D</color> #96-A
+    <!-- DARK THEME.TEXT -->
+    <color name='text_primary_DARK'>#403D3D</color> #85-A
+    <color name='text_secondary_DARK'>#403D3D</color> #83-A
+    <color name='text_button_DARK'>#403D3D</color> #83-A
+
+
 </resources>
