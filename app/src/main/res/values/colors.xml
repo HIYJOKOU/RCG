@@ -17,11 +17,11 @@
     <color name='text_button_LIGHT'>#000000</color> #83-A
 
     <!-- DARK THEME.BACKGROUND -->
-    <color name='background_DARK'>#403D3D</color> #96-A
+    <color name='background_DARK'>#312F2F</color> #96-A
     <!-- DARK THEME.TEXT -->
-    <color name='text_primary_DARK'>#403D3D</color> #85-A
-    <color name='text_secondary_DARK'>#403D3D</color> #83-A
-    <color name='text_button_DARK'>#403D3D</color> #83-A
+    <color name='text_primary_DARK'>#FFFFFF</color> #85-A
+    <color name='text_secondary_DARK'>#FFFFFF</color> #83-A
+    <color name='text_button_DARK'>#FFFFFF</color> #13-A
 
 
 </resources>
