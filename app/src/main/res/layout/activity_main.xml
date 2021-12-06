@@ -11,7 +11,7 @@
 
     <View
         android:id="@+id/vector_1"
-        android:layout_width="214dp"
+        android:layout_width="213dp"
         android:layout_height="264dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
