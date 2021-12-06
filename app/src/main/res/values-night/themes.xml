@@ -18,5 +18,7 @@
         <item name='text_primary'>@color/text_primary_DARK</item>
         <item name='text_secondary'>@color/text_secondary_DARK</item>
         <item name="background">@color/background_DARK</item>
+        <item name="button">@color/button_DARK</item>
+
     </style>
 </resources>

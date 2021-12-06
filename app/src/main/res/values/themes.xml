@@ -19,6 +19,7 @@
         <item name='text_primary'>@color/text_primary_LIGHT</item>
         <item name='text_secondary'>@color/text_secondary_LIGHT</item>
         <item name="background">@color/background_LIGHT</item>
+        <item name="button">@color/button_LIGHT</item>
 
 
     </style>

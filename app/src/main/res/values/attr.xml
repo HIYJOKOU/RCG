@@ -4,6 +4,7 @@
 
         <attr name="text_primary" format="color"/>
         <attr name="text_secondary" format="color"/>
+        <attr name="button" format="color"/>
 
     </declare-styleable>
 
