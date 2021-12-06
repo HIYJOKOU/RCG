@@ -10,7 +10,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <!-- LIGHT THEME.BACKGROUND -->
-    <color name='background_LIGHT'>#FFFFFF</color> #96-A
+    <color name='background_LIGHT'>#F3F3F3</color> #96-A
     <!-- LIGHT THEME.TEXT -->
     <color name='text_primary_LIGHT'>#000000</color> #85-A
     <color name='text_secondary_LIGHT'>#000000</color> #83-A
@@ -24,7 +24,7 @@
     <color name='text_primary_DARK'>#FFFFFF</color> #85-A
     <color name='text_secondary_DARK'>#FFFFFF</color> #83-A
     <color name='text_button_DARK'>#FFFFFF</color> #13-A
-    <color name='button_DARK'>#000000</color> #13-A
+    <color name='button_DARK'>#FF018786</color> #13-A
 
 
 
