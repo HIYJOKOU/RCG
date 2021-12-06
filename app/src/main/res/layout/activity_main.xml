@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F3F3F3"
+    android:background="?attr/background"
+
 
     tools:context=".MainActivity">
 
@@ -16,7 +17,7 @@
         android:fontFamily="@font/ubuntu_medium"
         android:text="@string/front_text_1_Morning"
         android:textColor="@color/text_primary_LIGHT"
-        android:textSize="24sp"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -31,7 +32,7 @@
         android:fontFamily="@font/ubuntu"
         android:text="@string/front_text_2"
         android:textColor="@color/text_secondary_LIGHT"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
