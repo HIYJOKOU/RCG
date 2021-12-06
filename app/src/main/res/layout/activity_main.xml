@@ -100,7 +100,7 @@
     <Button
         android:layout_width="194dp"
         android:layout_height="48dp"
-        android:background="?attr/button"
+        android:background="?attr/backgroundColor"
         android:text="@string/skanuj_produkt"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
