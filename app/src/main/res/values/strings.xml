@@ -1,9 +1,14 @@
 <resources>
+
     <string name="app_name">RCG</string>
+
     <string name="front_text_1_Morning">Good Morning</string>
     <string name="front_text_1_Evening">Good Evening</string>
+
     <string name="front_text_2">What would you like to scan?</string>
     <string name="button_ean">CLICK TO SCAN</string>
+
     <string name="lamp_emoji">💡</string>
+
     <string name="skanuj_produkt">SKANUJ PRODUKT</string>
 </resources>
