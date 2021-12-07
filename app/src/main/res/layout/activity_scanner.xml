@@ -7,16 +7,13 @@
     tools:context=".scanner">
 
     <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scanner_view"
         app:autoFocusButtonColor="@android:color/white"
         app:autoFocusButtonVisible="true"
         app:flashButtonColor="@android:color/white"
         app:flashButtonVisible="true"
-        app:maskColor="#80000000"
-
-
-        />
+        app:maskColor="#80000000" />
 
 </RelativeLayout>
