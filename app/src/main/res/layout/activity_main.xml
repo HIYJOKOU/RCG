@@ -68,11 +68,11 @@
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/PrimaryText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="@string/front_text_1_Morning"
+        android:text="@string/blank"
         android:textColor="?attr/text_primary"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -93,7 +93,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/PrimaryText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

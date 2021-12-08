@@ -1,9 +1,10 @@
 <resources>
 
-    <string name="app_name">RCG</string>
+    <string name="app_name">RBC-SCANNER</string>
 
     <string name="front_text_1_Morning">Good Morning</string>
     <string name="front_text_1_Evening">Good Evening</string>
+    <string name="blank">_blank_</string>
 
     <string name="front_text_2">What would you like to scan?</string>
     <string name="button_ean">CLICK TO SCAN</string>
