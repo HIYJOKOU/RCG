@@ -13,4 +13,5 @@
     <string name="back_button">BACK</string>
 
     <string name="skanuj_produkt">SKANUJ PRODUKT</string>
+    <string name="skanuj_produkty">skanuj-produkty</string>
 </resources>

@@ -68,11 +68,12 @@
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:id="@+id/PrimaryText"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:alpha="0.73"
         android:fontFamily="@font/ubuntu_medium"
-        android:text="@string/blank"
+        android:text="@string/front_text_1_Morning"
         android:textColor="?attr/text_primary"
         android:textSize="23sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -86,52 +87,35 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:alpha="1.93"
         android:fontFamily="@font/ubuntu"
         android:text="@string/front_text_2"
-        android:textColor="?attr/text_secondary"
         android:textSize="17sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/PrimaryText"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="-4dp"
-        android:layout_marginEnd="6dp"
-        android:fontFamily="@font/ubuntu_medium"
-        android:text="@string/button_ean"
-        android:textColor="?attr/text_secondary"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="94dp"
+    <Button
+        android:layout_width="194dp"
         android:layout_height="48dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="-10dp"
-        android:layout_marginEnd="5dp"
-        android:padding="3dp"
-        app:layout_constraintEnd_toStartOf="@+id/vector_2"
-        app:layout_constraintStart_toEndOf="@+id/vector_"
+        android:background="?attr/backgroundColor"
+        android:text="@string/skanuj_produkt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/vector_1"
-        app:srcCompat="@drawable/code" />
+        app:layout_constraintVertical_bias="0.4" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="90dp"
-        android:layout_height="69dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chuj a nie guzik"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="566dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
