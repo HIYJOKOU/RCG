@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:padding="5dp"
         android:textSize="25sp"
-        android:text="******"
+        android:text="*****"
         android:fontFamily="@font/ubuntu_medium"
         android:textColor="@color/back_button_text"
         app:layout_constraintTop_toBottomOf="@id/surface_view" />
