@@ -12,6 +12,10 @@
         <item name="button">@color/button_LIGHT</item>
         <item name="back_button">@color/back_button</item>
 
+        <!-- Panel Theme Colors -->
+        <item name="panel">@color/panel_LIGHT</item>
+        <item name="panel_stroke">@color/panel_stroke_LIGHT</item>
+
 
     </style>
 </resources>

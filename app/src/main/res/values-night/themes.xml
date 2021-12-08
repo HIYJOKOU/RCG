@@ -12,6 +12,10 @@
         <item name="button">@color/button_DARK</item>
         <item name="back_button">@color/back_button</item>
 
+        <!-- Panel Theme Colors -->
+        <item name="panel">@color/panel_DARK</item>
+        <item name="panel_stroke">@color/panel_stroke_DARK</item>
+
 
     </style>
 </resources>

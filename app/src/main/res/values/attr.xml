@@ -6,6 +6,8 @@
         <attr name="text_secondary" format="color"/>
         <attr name="button" format="color"/>
         <attr name="back_button" format="color"/>
+        <attr name="panel" format="color"/>
+        <attr name="panel_stroke" format="color"/>
 
     </declare-styleable>
 
