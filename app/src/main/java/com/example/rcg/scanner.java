@@ -53,13 +53,15 @@ public class scanner extends AppCompatActivity {
 
     private void initialiseDetectorsAndSources() {
 
+        //Toast.makeText(getApplicationContext(), "Barcode scanner started", Toast.LENGTH_SHORT).show();
+
         BarcodeDetector barcodeDetector = new BarcodeDetector.Builder(this)
                 .setBarcodeFormats(Barcode.ALL_FORMATS)
                 .build();
 
         cameraSource = new CameraSource.Builder(this, barcodeDetector)
                 .setRequestedPreviewSize(1920, 1080)
-                .setAutoFocusEnabled(true)
+                .setAutoFocusEnabled(true) //you should add this feature
                 .build();
 
         surfaceView.getHolder().addCallback(new SurfaceHolder.Callback() {
@@ -94,22 +96,33 @@ public class scanner extends AppCompatActivity {
         barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
             @Override
             public void release() {
-
+                // Toast.makeText(getApplicationContext(), "To prevent memory leaks barcode scanner has been stopped", Toast.LENGTH_SHORT).show();
             }
 
             @Override
-            public void receiveDetections(@NonNull Detector.Detections<Barcode> detections) {
+            public void receiveDetections(Detector.Detections<Barcode> detections) {
                 final SparseArray<Barcode> barcodes = detections.getDetectedItems();
                 if (barcodes.size() != 0) {
 
 
-                    barcodeText.post(() -> {
+                    barcodeText.post(new Runnable() {
 
-                        barcodes.valueAt(0);
-                        barcodeText.removeCallbacks(null);
-                        barcodeData = barcodes.valueAt(0).email.address;
-                        barcodeText.setText(barcodeData);
-                        toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
+                        @Override
+                        public void run() {
+
+                            if (barcodes.valueAt(0).email != null) {
+                                barcodeText.removeCallbacks(null);
+                                barcodeData = barcodes.valueAt(0).email.address;
+                                barcodeText.setText(barcodeData);
+                                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
+                            } else {
+
+                                barcodeData = barcodes.valueAt(0).displayValue;
+                                barcodeText.setText(barcodeData);
+                                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
+
+                            }
+                        }
                     });
 
                 }

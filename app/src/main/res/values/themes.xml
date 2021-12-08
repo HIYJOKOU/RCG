@@ -10,6 +10,7 @@
         <item name='text_secondary'>@color/text_secondary_LIGHT</item>
         <item name="background">@color/background_LIGHT</item>
         <item name="button">@color/button_LIGHT</item>
+        <item name="back_button">@color/back_button</item>
 
 
     </style>

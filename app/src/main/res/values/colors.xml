@@ -5,6 +5,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
+    <!-- BUTTON UNIVERSAL -->
+    <color name="back_button">#74000000</color>
+    <color name="back_button_text">#F5FFFFFF</color>
+
 
     <!-- LIGHT THEME.BACKGROUND -->
     <color name='background_LIGHT'>#F5FFFFFF</color> #96-A
