@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RCG">
         <activity
+            android:name=".product_info"
+            android:exported="false" />
+        <activity
             android:name=".scanner"
             android:exported="false" />
         <activity
@@ -27,11 +30,9 @@
         <meta-data
             android:name="com.google.android.gms.vision.DEPENDENCIES"
             android:value="barcode" />
-
         <meta-data
             android:name="preloaded_fonts"
-            android:resource="@array/preloaded_fonts"
-            />
+            android:resource="@array/preloaded_fonts" />
     </application>
 
 </manifest>
