@@ -18,4 +18,5 @@
     <string name="Panel_Text_Recycling">🛢️ *****</string>
     <string name="Panel_Text_Srodowisko">🌻 *****</string>
     <string name="Panel_Text_Zamienniki">🔆 *****</string>
+    <string name="todo">TODO</string>
 </resources>

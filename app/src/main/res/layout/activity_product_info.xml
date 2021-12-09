@@ -7,25 +7,43 @@
     android:background="?attr/background"
     tools:context=".product_info">
 
-    <View
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/Image_Panel"
-        android:layout_width="345dp"
+        android:layout_margin="20dp"
+        android:layout_width="0dp"
         android:layout_height="232dp"
+        android:layout_gravity="center"
         android:layout_marginTop="16dp"
         android:background="@drawable/panel"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Title_Panel"
-        tools:ignore="UnknownId" />
+        app:layout_constraintTop_toBottomOf="@+id/Title_Panel">
 
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/todo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/bulb" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <LinearLayout
         android:id="@+id/Title_Panel"
-        android:layout_width="345dp"
-        android:layout_height="53dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:layout_marginTop="40dp"
         android:background="@drawable/panel"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,85 +54,81 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
             android:layout_marginEnd="15dp"
-            android:layout_marginTop="7.5dp"
             android:layout_marginBottom="7.5dp"
             android:fontFamily="@font/ubuntu_medium"
-            android:textColor="?attr/text_primary"
             android:text="@string/Panel_Primary_Text"
             android:textAlignment="center"
+            android:textColor="?attr/text_primary"
             android:textSize="25sp" />
 
     </LinearLayout>
 
     <LinearLayout
+        android:layout_margin="20dp"
         android:id="@+id/title_Panel"
-        android:layout_width="345dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:background="@drawable/panel"
-
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Image_Panel"
-        android:orientation="vertical">
+        app:layout_constraintTop_toBottomOf="@+id/Image_Panel">
 
         <TextView
             android:id="@+id/Panel_Title_Text"
-            android:textColor="?attr/text_secondary"
-            android:layout_marginStart="15dp"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="7.5dp"
-            android:layout_marginBottom="7.5dp"
-            android:textSize="25sp"
-            android:fontFamily="@font/ubuntu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Panel_Text_Trash" />
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="7.5dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Panel_Text_Trash"
+            android:textColor="?attr/text_secondary"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/Recycling_Text"
-            android:layout_marginStart="15dp"
-            android:textColor="?attr/text_secondary"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="7.5dp"
-            android:layout_marginBottom="7.5dp"
-            android:textSize="25sp"
-            android:fontFamily="@font/ubuntu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Panel_Text_Recycling" />
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="7.5dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Panel_Text_Recycling"
+            android:textColor="?attr/text_secondary"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/Srodowisko_Text"
-            android:layout_marginStart="15dp"
-            android:textColor="?attr/text_secondary"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="7.5dp"
-            android:layout_marginBottom="7.5dp"
-            android:textSize="25sp"
-            android:fontFamily="@font/ubuntu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Panel_Text_Srodowisko" />
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="7.5dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Panel_Text_Srodowisko"
+            android:textColor="?attr/text_secondary"
+            android:textSize="25sp" />
 
         <TextView
             android:id="@+id/Zamienniki_Text"
-            android:layout_marginStart="15dp"
-            android:textColor="?attr/text_secondary"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="7.5dp"
-            android:layout_marginBottom="7.5dp"
-            android:textSize="25sp"
-            android:fontFamily="@font/ubuntu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/Panel_Text_Zamienniki" />
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/ubuntu"
+            android:text="@string/Panel_Text_Zamienniki"
+            android:textColor="?attr/text_secondary"
+            android:textSize="25sp" />
     </LinearLayout>
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
