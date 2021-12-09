@@ -28,7 +28,7 @@ public class product_info extends AppCompatActivity {
         setContentView(R.layout.activity_product_info);
 
 
-        new DownloadImageFromInternet((ImageView) findViewById(R.id.imageView2)).execute("https://icon-library.com/images/loading-icon-png/loading-icon-png-28.jpg");
+        new DownloadImageFromInternet((ImageView) findViewById(R.id.imageView2)).execute("https://kubus.pl/wp-content/uploads/2019/04/10402_40620_KUB1MU-PL-DP100ML-BRJABA-FRONT-V03.png");
     }
     private class DownloadImageFromInternet extends AsyncTask<String, Void, Bitmap> {
         ImageView imageView;
