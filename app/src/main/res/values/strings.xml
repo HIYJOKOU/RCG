@@ -13,7 +13,7 @@
     <string name="back_button">BACK</string>
 
     <string name="skanuj_produkt">SKANUJ PRODUKT</string>
-    <string name="Panel_Primary_Text">**** ***** **** ********</string>
+    <string name="Panel_Primary_Text">***</string>
     <string name="Panel_Text_Trash">🗑 *****</string>
     <string name="Panel_Text_Recycling">🛢️ *****</string>
     <string name="Panel_Text_Srodowisko">🌻 *****</string>

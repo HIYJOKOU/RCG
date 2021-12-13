@@ -12,7 +12,6 @@ import android.view.SurfaceView;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.TextView;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import com.google.android.gms.vision.CameraSource;
@@ -44,6 +43,8 @@ public class scanner extends AppCompatActivity {
         surfaceView = findViewById(R.id.surface_view);
         barcodeText = findViewById(R.id.barcode_text);
         initialiseDetectorsAndSources();
+
+        Intent sendStuff = new Intent(this, product_info.class);
 
         Button btn = (Button)findViewById(R.id.back_button);
 
@@ -113,17 +114,11 @@ public class scanner extends AppCompatActivity {
                             if (barcodes.valueAt(0).email != null) {
                                 barcodeText.removeCallbacks(null);
                                 barcodeData = barcodes.valueAt(0).email.address;
-                                startActivity(new Intent(scanner.this, product_info.class));
-                                barcodeText.setText(barcodeData);
-                                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
+
+                                //startActivity(new Intent(scanner.this, product_info.class));
+                                //toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
 
                             } else {
-
-                                barcodeData = barcodes.valueAt(0).displayValue;
-                                barcodeText.setText(barcodeData);
-                                startActivity(new Intent(scanner.this, product_info.class));
-                                toneGen1.startTone(ToneGenerator.TONE_CDMA_PIP, 150);
-
                             }
                         }
                     });

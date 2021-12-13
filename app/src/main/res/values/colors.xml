@@ -28,8 +28,8 @@
 
     <!-- DARK THEME.BACKGROUND -->
     <color name='background_DARK'>#312F2F</color> #96-A
-    <color name='panel_DARK'>#FFFFFF</color> #13-A
-    <color name='panel_stroke_DARK'>#FFFFFF</color> #13-A
+    <color name='panel_DARK'>#2E2D2D</color> #13-A
+    <color name='panel_stroke_DARK'>#383838</color> #13-A
 
     <!-- DARK THEME.TEXT -->
     <color name='text_primary_DARK'>#FFFFFF</color> #85-A
